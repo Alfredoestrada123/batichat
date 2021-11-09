@@ -39,13 +39,11 @@ self.addEventListener("install", (e) => {
 self.addEventListener("activate", (e) => {
   const respuesta = caches.keys().then((keys) => {
     keys.forEach((key) => {
-      if (key !== STATIC_CACHE && Keys.includes("static")) {
+      if (key !== STATIC_CACHE && key.includes("static")) {
         return caches.delete(key);
       }
     });
   });
-  e.waitUntil(respuesta);
-});
 
 self.addEventListener("fetch", (e) => {
   const respuesta = caches.match(e.request).then((res) => {
