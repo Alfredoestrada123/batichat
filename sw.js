@@ -44,6 +44,8 @@ self.addEventListener("activate", (e) => {
       }
     });
   });
+  e.waitUntil(respuesta);
+});
 
 self.addEventListener("fetch", (e) => {
   const respuesta = caches.match(e.request).then((res) => {
@@ -52,13 +54,9 @@ self.addEventListener("fetch", (e) => {
       console.log(e.request.url);
       return fetch(e.request).then((newRes) => {
         return actualizarCacheDinamico(DYNAMIC_CACHE, e.request, newRes);
-
-        //almacenamos en cahce dinamico
       });
-
-      //Busqueda en internet
-      //alamcenamos en el cahce dinamico
     }
   });
-  e.respondWith(respuesta); //mostramos recusos
+  e.respondWith(respuesta);
 });
+
