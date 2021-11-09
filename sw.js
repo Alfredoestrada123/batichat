@@ -14,14 +14,14 @@ const APP_SHELL = [
   "img/avatars/RedRobin.jpg",
   "img/avatars/Robin.jpg",
   "img/fondo.jpg",
-  "js/app.js",
+  "js/app.js"
 ];
 
 const APP_SHELL_INMUTABLE = [
   "https://fonts.googleapis.com/css?family=Quicksand:300,400",
   "https://fonts.googleapis.com/css?family=Lato:400,300",
   "css/animate.css",
-  "js/libs/jquery.js",
+  "js/libs/jquery.js"
 ];
 
 self.addEventListener("install", (e) => {
