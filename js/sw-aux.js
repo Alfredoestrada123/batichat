@@ -1,8 +1,8 @@
-//amacenar en cache dinamico
-function actualizarCacheDinamico(DYNAMIC_CACHE, request, res) {
+// en este auxiliar almacenamos el cache dinamico
+function actualizarCacheDinamico(dynamicCache, req, res) {
   if (res.ok) {
-    return caches.open(DYNAMIC_CACHE).then((cache) => {
-      cache.put(request, res.clone());
+    return caches.open(dynamicCache).then((cache) => {
+      cache.put(req, res.clone());
       return res.clone();
     });
   } else {
