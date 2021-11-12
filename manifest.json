@@ -1,7 +1,7 @@
 {
     "short_name": "Batichat",
     "name": "Batichat",
-    "start_url": "index.html",
+    "start_url": "/index.html",
     "background_color": "#2196F3", 
     "display": "standalone",
     "orientation": "portrait",
