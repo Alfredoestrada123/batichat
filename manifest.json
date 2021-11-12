@@ -3,24 +3,24 @@
     "name": "Batichat",
    
     "icons": [{
-        "src": "img/icons/logo16x16.ico",
-        "type": "image/ico",
+        "src": "img/icons/logo16x16.png",
+        "type": "image/png",
         "sizes": "16x16"
      }, {
-        "src": "img/icons/logo32x32.ico",
-        "type": "image/ico",
+        "src": "img/icons/logo32x32.png",
+        "type": "image/png",
         "sizes": "32x32"
      }, {
-        "src": "img/icons/logo48x48.ico",
-        "type": "image/ico",
+        "src": "img/icons/logo48x48.png",
+        "type": "image/png",
         "sizes": "48x48"
      }, {
-        "src": "img/icons/logo64x64.ico",
-        "type": "image/ico",
+        "src": "img/icons/logo64x64.png",
+        "type": "image/png",
         "sizes": "64x64"
      }, {
-        "src": "img/icons/logo128x128.ico",
-        "type": "image/ico",
+        "src": "img/icons/logo128x128.png",
+        "type": "image/png",
         "sizes": "128x128"
      }],
 
@@ -30,3 +30,4 @@
      "background_color": "#B12A34",
      "orientation": "portrait"
 }
+    
