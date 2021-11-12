@@ -1,5 +1,5 @@
 var url = window.location.href;
-var swlocation = "/alfredoestrada123.github.io/batichat/sw.js";
+var swlocation = "https://alfredoestrada123.github.io/batichat/sw.js";
 
 if (navigator.serviceWorker) {
   if (url.includes("localhost")) {
