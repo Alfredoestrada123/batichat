@@ -6,6 +6,7 @@
         "src": "img/icons/logo16x16.png",
         "type": "image/png",
         "sizes": "16x16"
+        "purpose": "any"
      }, {
         "src": "img/icons/logo32x32.png",
         "type": "image/png",
