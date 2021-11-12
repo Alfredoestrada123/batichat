@@ -1,6 +1,12 @@
-//instala el sw
+var url = window.location.href;
+var swlocation = "../alfredoestrada123.github.io/batichat/sw.js";
+
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("sw.js");
+  if (url.includes("localhost")) {
+    swlocation = "/sw.js";
+  } else {
+    navigator.serviceWorker.register(swlocation);
+  }
 }
 
 // Referencias de jQuery
